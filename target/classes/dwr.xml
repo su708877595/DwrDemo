@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE dwr PUBLIC  
+    "-//GetAhead Limited//DTD Direct Web Remoting 3.0//EN"  
+    "http://directwebremoting.org/schema/dwr30.dtd">  
+<dwr>  
+    <allow>  
+        <create creator="new" javascript="HelloDwr">  
+            <!-- value是java中的类名 -->  
+            <param name="class" value="com.syh.dwr.HelloDwr"></param>  
+        </create>  
+         <create creator="new" javascript="PushDwr">
+            <param name="class" value="com.syh.dwr.PushDwr"></param>
+            <!-- 这个标签可以写也可以不写，无所谓的-->
+            <include method="Send"/>
+        </create>
+    </allow>  
+</dwr> 
